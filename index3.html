@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICA</title>
+    <link rel="Website Icon" href="aica_logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="fade-down">
+        <div class="header-logo">
+            <img src="aica_logo.jpg" alt="Logo AICA">
+        </div>
+        <div class="menu-desktop">
+            <nav>
+                <ul class="corheader">
+                    <li><a href="index.html">Quem somos</a></li>
+                    <li><a href="index2.html">Ações</a></li>
+                    <li><a href="index3.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="index.html">Quem somos</a></li>
+                <li><a href="index2.html">Ações</a></li>
+                <li><a href="index3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay"></div>
+
+    <section class="contato">
+        <h2 class="fade-left">Contate-nos!</h2>
+        <p class="fade-right">Entre em contato conosco para saber mais sobre nossas ações e como ajudar.</p>
+
+    </section>
+
+    <section id="feedbacks">
+        <div class="quem-somos-text fade-left">
+            <h2 class="josefin-sans">Entre em Contato</h2>
+            <p class="questrial">
+                <strong>Endereço:</strong> <br> Rua Bernardo Joaquim Ferreira, 155 — Parque dos Anjos, Gravataí/RS — CEP: 94190-000<br><br>
+                <strong>CNPJ:</strong><br> 34.860.976/0001-56<br><br>
+                <strong>Telefone: </strong><br> (51) 99157-5726<br><br>
+                <strong>Fundador e Presidente:</strong><br> Marcio Jardim Carpes 
+            </p>
+        </div>
+        <form class="fade-right" onsubmit="sendEmail(event)">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+          
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          
+            <button type="submit">Enviar</button>
+          </form>
+    </section>
+
+    <section class="redes-aica fade-left">
+        <h2 class="josefin-sans">Acompanhe-nos!</h2>
+        <div class="social-icons">
+            <a href="https://wa.me/5551991575726" target="_blank" class="whatsapp" aria-label="WhatsApp AICA">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/aica_gravatai/" target="_blank" class="instagram" aria-label="Instagram AICA">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/aica.gravatai" target="_blank" class="facebook" aria-label="Facebook AICA">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer-atrian">
+        <div class="footer-top fade-left">
+            <div class="footer-ladoalado">
+                <img src="atrián_logo_transparente.png" alt="Logo Atrián" class="footer-logo" loading="lazy">
+                <h1 class="josefin-sans">Atrián</h1>
+            </div>
+            <div class="footer-contact">
+                <p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atrianrs@gmail.com" target="_blank">atrianrs@gmail.com</a>
+                    
+                </p>
+            </div>
+            <div class="footer-social">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atrianrs@gmail.com" target="_blank">
+                    <img src="email.png" alt="Email" loading="lazy">
+                <a href="https://www.instagram.com/atrianrs/" target="_blank"><img src="instagram.png" alt="Instagram" loading="lazy"></a>
+                
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2025 Atrián. Todos os direitos reservados.
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
